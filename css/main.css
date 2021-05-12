@@ -1,0 +1,62 @@
+/* Applies to all pages, double code removed */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+  --hue: 20;
+  --dark: hsl(var(--hue), 80%, 50%);
+  --light: hsl(var(--hue), 80%, 90%);
+}
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ font-family: Nunito, sans-serif;
+ max-width: 100%;
+ margin: 10px auto;
+ color: #001a33;
+ overflow: auto;
+ background-color: #e6ffff;
+}
+
+nav {
+ display: flex;
+ flex-direction: row;
+ background-color: yellow;
+ box-sizing: border-box;
+ flex-basis: 15vw;
+ flex-shrink: 0;
+ margin-bottom: 10px;
+ height: 50px;
+ z-index: 10;
+}
+
+nav a {
+ color: black;
+ padding: 0.5em 1em;
+ text-decoration: none;
+ transition: background-color 0.4s;
+ text-align: center;
+}
+
+nav a:hover {
+ background-color: #32a88d;
+ color: #fff;
+}
+
+nav.open {
+ transform: translateX(0);
+}
+
+#menuToggler {
+ position: fixed;
+ top: 0;
+ right: 0;
+ z-index: 30;
+ font-size: 50px;
+ color: #000;
+ cursor: pointer;
+}
